@@ -1,0 +1,64 @@
+.card {
+  padding: 0 1rem;
+  margin-top: 3rem;
+
+  &__heading {
+    font-family: $font-family-2;
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0.5rem;
+
+    &-pink {
+      color: $color-pink;
+    }
+    &-green {
+      color: $color-green;
+    }
+    &-blue {
+      color: $color-blue;
+    }
+    &-orange {
+      color: $color-orange;
+    }
+  }
+
+  &__image {
+    width: 20rem;
+    height: 12rem;
+    margin: 0 auto;
+
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+
+    &-pink {
+      background: linear-gradient(to right, $color-pink, $color-pink-light);
+      mask-image: url(../images/truck.png);
+    }
+
+    &-green {
+      background: linear-gradient(to right, $color-green, $color-green-light);
+      mask-image: url(../images/taxi.png);
+    }
+
+    &-blue {
+      background: linear-gradient(to right, $color-blue, $color-blue-light);
+      mask-image: url(../images/airline.png);
+    }
+    &-orange {
+      background: linear-gradient(to right, $color-orange, $color-orange-light);
+      mask-image: url(../images/ferry.png);
+    }
+  }
+
+  &__body {
+    font-size: 2rem;
+    line-height: 3.6rem;
+    width: 28rem;
+    height: 21rem;
+    margin: 2rem auto 0;
+    word-wrap: break-word;
+  }
+}

@@ -1,0 +1,29 @@
+.hero {
+  text-align: center;
+
+  @include responsive(desktop) {
+    // margin-right: 0;
+    // margin-left: auto;
+    // max-width: 100%;
+  }
+
+  &__main-heading {
+    font-family: $font-family-2;
+    font-size: 3.6rem;
+    margin-bottom: 5rem;
+
+    @include responsive(tab-port) {
+      font-size: 5.6rem;
+      margin-bottom: 0;
+    }
+  }
+  &__text {
+    display: none;
+    @include responsive(desktop) {
+      display: block;
+    }
+    font-size: 2rem;
+    margin-top: 4rem;
+    padding: 0 4rem;
+  }
+}

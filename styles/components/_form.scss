@@ -1,0 +1,96 @@
+.form {
+  font-family: $font-family-1;
+  font-size: 1.6rem;
+  color: white;
+  padding: 0 1rem;
+
+  &__group {
+    margin: 1rem 0 1rem 0;
+    position: relative;
+    @include responsive(tab-port) {
+      width: 70%;
+      margin: 0 auto;
+    }
+    @include responsive(desktop) {
+      width: 50%;
+    }
+  }
+
+  &__input {
+    font-family: $font-family-1;
+    font-size: 1.6rem;
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    border: 0.5rem solid transparent;
+    border-radius: 1rem;
+    transition: border 0.3s;
+
+    &:focus,
+    &:active {
+      outline: none;
+      border: 0.5rem solid $color-green;
+    }
+
+    &:invalid {
+      border: 0.5rem solid $color-pink;
+    }
+
+    &-label {
+      font-size: 1.6rem;
+      // margin-top: 1rem;
+      display: block;
+      transition: all 0.3s;
+    }
+
+    &:placeholder-shown + &-label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4rem);
+    }
+  }
+
+  &__checkbox {
+    display: none;
+
+    &-group {
+      display: flex;
+      @include responsive(tab-port) {
+        justify-content: center;
+        margin-bottom: 4rem;
+      }
+    }
+
+    &-label {
+      cursor: pointer;
+      display: flex;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    &-button {
+      display: inline-block;
+      width: 3rem;
+      height: 3rem;
+      border: 0.4rem solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+      transition: all 0.3s;
+      &::after {
+        content: '\2713';
+        font-weight: 900;
+        display: none;
+        // width: 1.2rem;
+        // height: 1.2rem;
+        // background: white;
+      }
+    }
+  }
+  &__checkbox:checked + &__checkbox-label &__checkbox-button {
+    background-color: $color-green;
+  }
+  &__checkbox:checked + &__checkbox-label &__checkbox-button::after {
+    display: inline-block;
+  }
+}

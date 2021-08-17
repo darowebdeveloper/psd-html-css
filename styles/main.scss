@@ -1,0 +1,27 @@
+@import './mixins';
+@import './base';
+
+@import './utilities';
+@import './page';
+
+@import './components/navigation';
+@import './components/btn';
+@import './components/hero';
+@import './components/video';
+@import './components/card';
+@import './components/review';
+@import './components/team';
+@import './components/form';
+
+.grid-container {
+  background: url(../images/gride-mobile.png) no-repeat;
+  background-position: top center;
+  max-width: 36.8rem;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 180rem;
+  margin-left: auto;
+  margin-right: auto;
+}

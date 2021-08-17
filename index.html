@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Siemreap&display=swap" rel="stylesheet">
+  <script src="./js/index.js" defer></script>
+  <title>Website</title>
+</head>
+
+<body>
+  <div class="grid-containers">
+    <div class="header container">
+      <img src="./images/logo.png" class="header__logo" alt="" width="223 " height="77">
+
+      <div class="navigation">
+
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a href="#self" class="navigation__list-link navigation__list-link--active">ទំព័រដើម</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#self" class="navigation__list-link">អំពីយើង</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#self" class="navigation__list-link">សេវាកម្ម</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#self" class="navigation__list-link">អត្ថបទថ្មីៗ</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#self" class="navigation__list-link">ទំនាក់ទំនង</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#self" class="btn btn--small btn--cta">ដោឡូដ៍កម្មវិធី</a>
+          </li>
+        </ul>
+
+        <input type="checkbox" id="navigation__check" name="navigation__check" class="navigation__check">
+        <label for="navigation__check" class="navigation__menu-box">
+          <span class="navigation__icon"></span>
+        </label>
+
+      </div>
+    </div>
+    <!-- end of header -->
+    <div class="section section__hero container">
+
+      <div class="hero">
+        <div class="hero__content">
+          <h1 class="hero__main-heading">កីឡាប្រជាជាតិអាស៊ីអាគ្នយ៍</h1>
+          <p class="hero__text">
+            កម្ពុជា បានចូលរួមក្នុងព្រឹត្តិការណ៍កីឡាស៊ីហ្គេមលើកទី២៨ នៅប្រទេសសិង្ហបុរី ពីថ្ងៃទី៥ ដល់ ១៦ ខែមិថុនា
+            ឆ្នាំ២០១៥។
+            ក្រុមកីឡាករជម្រើសជាតិកម្ពុជាមានចំនួនសរុប១៧៨រូប ដែលចូលរួមប្រកួតក្នុងប្រភេទកីឡា។
+          </p>
+        </div>
+
+        <a href="#self" class="btn btn--cta margin-top-large margin-bottom-large">ដោឡូដ៍កម្មវិធី</a>
+      </div>
+
+      <figure class="video">
+        <button class="video__play-button"></button>
+        <video width="250" class="video__content" loop muted>
+          <source src="./images/video.mp4" type="video/mp4">
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+        <figcaption class="video__caption">
+          <span>អត្ថបទដែលទាក់ទងនឹងកម្ពុជានេះ គឺជាអត្ថបទខ្លីមិនពេញលេញ។</span>
+        </figcaption>
+      </figure>
+      <!-- end of video -->
+    </div>
+    <!-- end of section__hero -->
+
+    <div class="section section__1">
+      <h2 class="section-heading-main">វិស័យទេសចរណ៍ វិស័យគមនាគមន៍​ និងដឹកជញ្ជូន</h2>
+      <h3 class="section-heading-sub">បណ្ដាញដឹកជញ្ជួនសាធារណៈ​ សេវាកម្មឡានក្រុងរបស់រដ្ឋ។</h3>
+
+      <div class="section__1-grid container">
+
+        <div class="card">
+          <div class="card__heading card__heading-pink">
+            ម្ហូបអាហារ
+          </div>
+          <div class="card__image card__image-pink"></div>
+          <div class="card__body">
+            <p>ម្ហូបអាហារនៅសិង្ហបុរី​ជាឧទាហរណ៍​មួយ​នៃ​ភាព​សំបូរ​បែប និង​ការ​រលាយ​​ចូល​គ្នា​​នៃ​វប្បធម៌​ចិន​ ឥណ្ឌា​
+              ម៉ាឡេ​
+              និង​តាមិល។ ជាក់ស្ដែង នៅ​មជ្ឍ​មណ្ឌល​ម្ហូបអាហារ ​គេ​អាច​ឃើញ​ស្តង់​អាហារ​ម៉ាឡេលក់ម្ហូបហាឡាល់។</p>
+          </div>
+        </div>
+
+        <div class="card ">
+          <div class="card__heading card__heading-green">
+            កីឡានិងការកំសាន្ត
+          </div>
+          <div class="card__image card__image-green"></div>
+          <div class="card__body">
+            <p>ប្រជាជនសិង្ហបុរីរីករាយក្នុងសកម្មភាពកីឡានិងកំសាន្តច្រើនសណ្ឋាន។ កីឡាពេញនិយមមាន បាល់ទាត់ គ្រីកខិត ហែលទឹក
+              វាយសី
+              បាល់បោះ បាល់អោប បាល់ទះ និង វាយកូនឃ្លីលើតុ។</p>
+          </div>
+        </div>
+
+        <div class="card ">
+          <div class="card__heading card__heading-blue">
+            បណ្ដាញព័ត៌មាន
+          </div>
+          <div class="card__image card__image-blue"></div>
+          <div class="card__body">
+            <p>ការឃ្លាំមើលបណ្ដាញព័ត៌មាននៅ​សិង្ហបុរី​នៅ​មាន​កំរិត​តឹង​រឹង​នៅ​ឡើយ។
+              រដ្ឋ​នឹង​ប្រើ​គំនាប​នៅ​លើ​បណ្ដាញ​ព័ត៌មាន​ណា​ដែល​ធ្វើ​ការ​រិះ​គន់​​​ដល់​​​មន្ត្រី​ក្នុង​ជួរ​រដ្ឋាភិបាល។
+              អាជ្ញាធម៌អភិវឌ្ឍបណ្ដាញព័ត៌មាន។</p>
+          </div>
+        </div>
+
+        <div class="card ">
+          <div class="card__heading card__heading-orange">
+            សិល្បៈ
+          </div>
+          <div class="card__image card__image-orange"></div>
+          <div class="card__body">
+            <p>តាំងពីទសវត្សរ៍ឆ្នាំ៩០
+              រដ្ឋា​ភិបាល​បានប្រឹងប្រែង​ក្នុង​ការជំរុញ​សិង្ហបុរី​​អោយ​ក្លាយ​​ជា​​​​មជ្ឍមណ្ឌល​​សិល្បៈ​និងវប្បធម៌
+              (ជា​ពិសេស​សិល្បៈ​សំដែង) និង​ប្រែ​ក្លាយ​សិង្ហបុរី​អោយ​ក្លាយ​ជាក្លោងទ្វារសកល​រវាងវប្បធម៌។ </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of section-1 -->
+
+    <div class="section section__2">
+      <h2 class="section-heading-main">សាកលវិទ្យាល័យជាតិនៃសិង្ហបុរី</h2>
+
+      <div class="section__2-grid container">
+
+        <div class="review">
+          <div class="review__photo">
+            <img src="./images/reviewer-1.png" alt="Looking serious">
+          </div>
+          <div class="review__name">លីជែវ៉ី៖ កីឡាករ​វាយកូនឃ្លីលើតុ​សិង្ហបុរី</div>
+          <div class="review__text">
+            <p>
+              ប្រជាជនសិង្ហបុរីរីករាយក្នុងសកម្មភាពកីឡានិងកំសាន្តច្រើនសណ្ឋាន។ កីឡាពេញនិយមមាន បាល់ទាត់ គ្រីកខិត ហែលទឹក
+              វាយសី
+              បាល់បោះ បាល់អោប បាល់ទះ និង វាយកូនឃ្លីលើតុ។ ក្រៅពីនេះ
+              ការជ្រមុជ​ទឹក​លេង​កំសាន្តជាការពេញនិយមនៅតាមបណ្ដាកោះភាគខាងត្បូង។
+            </p>
+          </div>
+        </div>
+
+        <div class="review">
+          <div class="review__photo review__photo--blue">
+            <img src="./images/reviewer-2.png" alt="Looking serious">
+          </div>
+          <div class="review__name review__name--blue">លីជែវ៉ី៖ កីឡាករ​វាយកូនឃ្លីលើតុ​សិង្ហបុរី</div>
+          <div class="review__text">
+            <p>
+              ប្រជាជនសិង្ហបុរីរីករាយក្នុងសកម្មភាពកីឡានិងកំសាន្តច្រើនសណ្ឋាន។ កីឡាពេញនិយមមាន បាល់ទាត់ គ្រីកខិត ហែលទឹក
+              វាយសី
+              បាល់បោះ បាល់អោប បាល់ទះ និង វាយកូនឃ្លីលើតុ។ ក្រៅពីនេះ
+              ការជ្រមុជ​ទឹក​លេង​កំសាន្តជាការពេញនិយមនៅតាមបណ្ដាកោះភាគខាងត្បូង។
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- end of section-2 -->
+
+    <div class="section section__3">
+      <h2 class="section-heading-main">ការប្រកួតកីឡាប្រជាជាតិអាស៊ីអាគ្នេយ៍</h2>
+      <h3 class="section-heading-sub">ក្រុមប្រឹក្សាអូឡាំពិកអាស៊ី (Olympic Council of Asia)។</h3>
+
+      <div class="section__3-grid container">
+
+        <div class="team">
+          <div class="team__position">ក្រាហ្វិចឌីហ្សាន</div>
+          <picture class="team__photo">
+            <source media="(min-width: 1200px)" srcset="./images/team-1-tall.png">
+            <img src="./images/team-1.png" alt="Ponleour">
+            <figcaption class="team__name">ពន្លឺ</figcaption>
+          </picture>
+        </div>
+
+        <div class="team">
+          <div class="team__position team__position--green">រចនាម៉ូឌែល</div>
+          <picture class="team__photo">
+            <source media="(min-width: 1200px)" srcset="./images/team-2-tall.png">
+            <img src="./images/team-2.png" alt="Ponleour">
+            <figcaption class="team__name team__name--green">រចនា</figcaption>
+          </picture>
+        </div>
+
+        <div class="team">
+          <div class="team__position team__position--blue">សរសេរកម្មវិធី</div>
+          <picture class="team__photo">
+            <source media="(min-width: 1200px)" srcset="./images/team-3-tall.png">
+            <img src="./images/team-3.png" alt="Ponleour">
+            <figcaption class="team__name team__name--blue">វិជ្ជា</figcaption>
+          </picture>
+        </div>
+
+        <div class="team">
+          <div class="team__position team__position--orange">រចនាម៉ូឌែល</div>
+          <picture class="team__photo">
+            <source media="(min-width: 1200px)" srcset="./images/team-4-tall.png">
+            <img src="./images/team-4.png" alt="Ponleour">
+            <figcaption class="team__name team__name--orange">ម៉ូលីកា</figcaption>
+          </picture>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- end of section-3 -->
+
+    <footer class="footer">
+
+      <h2 class="section-heading-main section-heading-main--white">ព្រឹត្តការណ៍កីឡា​រៀបចំដោយ
+        ក្រុមប្រឹក្សាអូឡាំពិកអាស៊ី
+      </h2>
+      <h3 class="section-heading-sub">សូមមើលតំនភ្ជាប់ក្រៅ</h3>
+      <p​ class="footer__text">
+        ស៊ីហ្កេមលើកទី២៦ដែលនឹងត្រូវធ្វើឡើងនៅឥណ្ឌូ​នេស៊ី
+        បើ​តាម​របាយការណ៍​បាន​អោយ​ដឹង​ថា​ក្រៅ​ពី​ក្រុង​ចាការតា​​នឹង​មាន​ក្រុង​៣ ​ផ្សេង​ទៀត​(បានឌុង ប៉ាឡេមបាង
+        និង​សេម៉ារ៉ាង)
+        ដែល​នឹង​ចូល​រួម​ធ្វើ​ជា​ម្ចាស់​ផ្ទះ​ក្នុង​ព្រឹត្តិការណ៍នេះ។
+      </p​>
+      <form action="" class="form">
+        <div class="form__group">
+          <input type="email" class="form__input" id="question" placeholder="អ៊ីម៉ែលរបស់អ្នក នៅទីនេះ">
+          <label for="question" class="form__input-label">អ៊ីម៉ែលរបស់អ្នក</label>
+        </div>
+        <div class="form__group">
+          <div class="form__checkbox-group">
+            <input type="checkbox" id="answer" class="form__checkbox">
+            <label for="answer" class="form__checkbox-label">
+              <span class="form__checkbox-button"></span>
+              យល់ព្រម
+            </label>
+
+            <input type="checkbox" id="no" class="form__checkbox">
+            <label for="no" class="form__checkbox-label">
+              <span class="form__checkbox-button"></span>
+              ឆ្លើយតាមអ៊ីម៉ែល
+            </label>
+
+          </div>
+        </div>
+      </form>
+      <div class="footer-grid container">
+        <div class="footer__button">
+          <a href="#self" class="btn btn--white">អាស៊ីហ្គេម</a>
+          <p>hello@example.com</p>
+        </div>
+        <div class="footer__button">
+          <a href="#self" class="btn btn--green">ចំណាត់ថ្នាក់ក្រុម</a>
+          <p>855-12-444-888</p>
+        </div>
+
+        <div class="footer__subtext">
+          <h4 class="footer__subtext-heading">អត្ថបទ​នេះ​ត្រូវ​បាន​ផ្ដល់​ក្រោម​អាជ្ញា​​បណ្ណ</h4>
+          <p>
+            Creative Commons Attribution ShareAlike License​ ។ លក្ខខណ្ឌ​បន្ថែម​​ផ្សេងៗ​ទៀត​ក៏​នឹង​អាចត្រូវបានអនុវត្ត។​
+            សូមមើល
+            លក្ខខណ្ឌ​ក្នុងការ​ប្រើប្រាស់ សម្រាប់​ព័ត៌មានលម្អិត​។
+          </p>
+        </div>
+
+        <ul class="footer__link">
+          <li class="footer__link-item">
+            <a href="#self">*លក្ខខណ្ឌ</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="#self">*ការប្រើប្រាស់ព័ត៌មាន</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social-link">
+          <li class="footer__social-link-item">
+            <a href="#self">
+              <img src="./images/facebook.png" alt="" width="65">
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="#self">
+              <img src="./images/twitter.png" alt="" width="65">
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="#self">
+              <img src="./images/youtube.png" alt="" width="65">
+            </a>
+          </li>
+        </ul>
+
+        <div class="footer__copyright">
+          រក្សាសិទ្ធិគ្រប់យ៉ាង &copy; ២០២១
+        </div>
+      </div>
+
+    </footer>
+    <!-- end of footer -->
+
+  </div>
+  <!-- end of grid-container -->
+</body>
+
+</html>

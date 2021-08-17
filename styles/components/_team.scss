@@ -1,0 +1,73 @@
+.team {
+  font-family: $font-family-2;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 4rem;
+  color: white;
+  text-align: center;
+
+  &__position {
+    font-weight: 100;
+    padding: 0.3rem 3rem;
+    border-radius: 1rem;
+    display: inline-block;
+    position: relative;
+    background: $color-pink;
+
+    &::after {
+      content: '';
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      left: 48%;
+      bottom: -2rem;
+      border-left: 1rem solid transparent;
+      border-right: 1rem solid transparent;
+      border-top: 2rem solid $color-pink;
+    }
+    &--green::after {
+      border-top: 2rem solid $color-green;
+    }
+    &--blue::after {
+      border-top: 2rem solid $color-blue;
+    }
+    &--orange::after {
+      border-top: 2rem solid $color-orange;
+    }
+  }
+
+  &__photo {
+    margin: 2.5rem auto 0;
+    display: block;
+    position: relative;
+
+    & img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__name {
+    padding: 0.1rem 4rem;
+    border-radius: 1rem;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    background: rgba($color-pink, 0.9);
+  }
+  &:nth-of-type(even) &__name {
+    right: 50%;
+  }
+  &__name--green,
+  &__position--green {
+    background: rgba($color-green, 0.9);
+  }
+  &__name--blue,
+  &__position--blue {
+    background: rgba($color-blue, 0.9);
+  }
+  &__name--orange,
+  &__position--orange {
+    background: rgba($color-orange, 0.9);
+  }
+}

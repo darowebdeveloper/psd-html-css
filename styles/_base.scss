@@ -1,0 +1,40 @@
+$color-orange: #f08c00;
+$color-orange-dark: #ed7c0d;
+$color-orange-light: #f9a800;
+
+$color-pink: #b92659;
+$color-pink-light: #fdd3e1;
+
+$color-green: #2c8e3f;
+$color-green-light: #67d97a;
+
+$color-blue: #1868b6;
+$color-blue-light: #9ad1fc;
+
+$color-black-1: #272727;
+$color-black-2: #343a40;
+
+$color-background-1: #fefcf1;
+$color-background-2: #dfddd2;
+
+$font-family-1: 'Khmer OS Siemreap', 'Siemreap', sans-serif;
+$font-family-2: 'Khmer OS Bokor', 'Bokor', sans-serif;
+
+*,
+*::before,
+*::after {
+  // https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+  box-sizing: inherit;
+
+  padding: 0;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+  font-family: $font-family-1;
+  font-size: 62.5%; // 10px / 16px
+}
+
+img {
+  max-width: 100%;
+}
